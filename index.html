@@ -6,7 +6,7 @@
     <title>WWDD - What Would Drizz Do</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
@@ -15,22 +15,43 @@
         header {
             background-color: #002244;
             color: #fff;
-            padding: 1em 0;
+            padding: 1.5em 0;
             text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin: 1em 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
             padding: 2em;
             text-align: center;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1em 0;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
         .button {
             background-color: #002244;
             color: #fff;
             border: none;
-            padding: 0.8em 2em;
-            font-size: 1em;
-            border-radius: 5px;
+            padding: 1em 2.5em;
+            font-size: 1.2em;
+            border-radius: 8px;
             cursor: pointer;
-            margin-top: 1em;
+            margin-top: 1.5em;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         .button:hover {
             background-color: #0057b7;
@@ -39,25 +60,71 @@
             background-color: #002244;
             color: #fff;
             text-align: center;
-            padding: 1em 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 1.5em 0;
+        }
+        .disclaimer {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 1.5em;
+            text-align: left;
+        }
+        .about {
+            background-color: #e9ecef;
+            padding: 2em;
+            border-radius: 10px;
+            margin: 2em auto;
+            width: 80%;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .about h2 {
+            margin-bottom: 1em;
+        }
+        .social {
+            margin: 2em 0;
+        }
+        .social a {
+            color: #002244;
+            font-size: 1.2em;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .social a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>WWDD - What Would Drizz Do</h1>
-        <p>More than a memecoin—it's a stand for the people.</p>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#join">Join Us</a>
+            <a href="#disclaimer">Disclaimer</a>
+        </nav>
     </header>
-    <section>
+    <section id="about" class="about">
         <h2>About WWDD</h2>
-        <p>WWDD is built on Solana and represents the 340 million voices fighting for integrity and justice. A portion of the funds will support those who defend Constitutional rights and keep communities safe.</p>
+        <p>WWDD (What Would Drizz Do) was created as a symbol of integrity, bravery, and justice. It represents the 340 million voices fighting for Constitutional rights, justice, and safety. Built on Solana, a portion of WWDD's funds will provide support for professionals who uphold these values and protect communities every day without recognition.</p>
+        <img src="Designer.png" alt="WWDD Coin">
+    </section>
+    <section>
+        <h2>Why WWDD?</h2>
+        <p>This project is more than a memecoin—it’s a stand for the people who fight for integrity and justice in the shadows. Your support helps build a stronger community that values honor and freedom.</p>
         <button class="button">Join the Movement</button>
     </section>
+    <section class="social">
+        <h2>Connect with Us</h2>
+        <p>Follow us for the latest updates and announcements:</p>
+        <a href="https://x.com/WWDD_DRIZZ" target="_blank">Twitter (X)</a>
+    </section>
+    <section id="disclaimer">
+        <div class="disclaimer">
+            <h3>Legal Disclaimer</h3>
+            <p>WWDD is not affiliated with or endorsed by any government agency or individual. A portion of funds may support legal aid initiatives, subject to available resources, operational priorities, and compliance with applicable laws. Participation involves risk. Please consult legal or financial professionals before proceeding.</p>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2025 WWDD. Not affiliated with any government agency.</p>
+        <p>&copy; 2025 WWDD. Built on Solana. All rights reserved.</p>
     </footer>
 </body>
 </html>
